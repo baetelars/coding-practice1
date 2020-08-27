@@ -1,0 +1,227 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-shadow: 4px 4px 5px blueviolet;
+}
+
+.tittle {
+    color: black;
+}
+
+#italic {
+    color: black;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 35px;
+}
+
+.container {
+    border: 5px solid rgb(40, 228, 15);
+    margin: 50px 0px 75px 0px;
+    padding: 20px 5px 20px 5px;
+    color: darkred;
+    background-color: rgb(151, 145, 145);
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    margin: 20px 20px;
+    background-color: seagreen;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 7.5%;
+    background-image: radial-gradient(circle, red, green, blue);
+}
+
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+#box3 {
+    animation: getBigger infinite 8s ease-in;
+    border-radius: 50%;
+    background: red;
+}
+
+@keyframes changeColor {
+    0% {background-color: rgb(231, 38, 13);}
+    20% {background-color: rgb(238, 145, 5);}
+    40% {background-color: rgb(215, 238, 11);}
+    60% {background-color: rgb(11, 238, 98);}
+    80% {background-color: rgb(10, 240, 228);}
+    100% {background-color: rgb(15, 54, 228);}
+}
+
+#box4 {
+    animation: changeColor 4s infinite;
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box5 {
+    position: relative;
+    background-color: salmon;
+    animation: moveBox 5s 3s;
+}
+
+#box6 {
+    top:10px;
+    left: 20px;
+    position: relative;
+}
+
+html {
+    background-color: grey;
+}
+
+.logo-img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 8px 8px 15px red;
+}
+
+.flex {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    justify-content: flex-start;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+}
+
+.nav-wrapper {
+    background-color: black;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 10px;
+}
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: grid;
+grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: grey;
+    color: #444;
+}
+
+.Box {
+    background-color: grey;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col / span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, yellow, purple, orange);
+}
+.d {
+    grid-column: col  / span  3 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 3 / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(orange, purple, yellow, pink);
+}
