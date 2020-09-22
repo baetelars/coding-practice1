@@ -27,5 +27,15 @@
         <div class="Box e"><img src="foto/bloem 5.jpg" alt="bloem 5" height="300px"></div>
         <div class="Box f"><img src="foto/bloem 6.jpg" alt="bloem 6" height="300px"></div>
       </div>
+
+      <script>
+        document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});
+        document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});
+        document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});
+        </script>
+        <style>
+        .jw-album-image img, .jw-element-image img { pointer-events: none; -webkit-touch-callout: none; }
+        .pswp__share-tooltip .pswp__share--download { display: none; }
+        </style>
  </body>
 </html>
